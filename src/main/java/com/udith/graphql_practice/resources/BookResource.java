@@ -1,6 +1,6 @@
 package com.udith.graphql_practice.resources;
 
-import com.udith.graphql_practice.service.GraphqlService;
+import com.udith.graphql_practice.service.GraphQLService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,7 +17,7 @@ import graphql.ExecutionResult;
 public class BookResource{
 
     @Autowired
-    GraphqlService graphQLServie;
+    GraphQLService graphQLServie;
 
     @PostMapping("/books")
     public ResponseEntity<Object> getAllBooks(@RequestBody String query){
